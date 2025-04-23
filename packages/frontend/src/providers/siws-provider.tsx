@@ -2,18 +2,17 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { SiwsIdentityProvider } from "ic-siws-js/react";
 import { canisterId } from "../../../ic_siws_provider/declarations/index";
 
-export default function SiwsProviders({
+export default function SiwsProvider({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const walletContext = useWallet();
+  // Listen for changes to the selected wallet
+  const { wallet } = useWallet();
 
+  // Update the SiwsIdentityProvider with the selected wallet adapter
   return (
-    <SiwsIdentityProvider
-      canisterId={canisterId}
-      adapter={walletContext.wallet?.adapter}
-    >
+    <SiwsIdentityProvider canisterId={canisterId} adapter={wallet?.adapter}>
       {children}
     </SiwsIdentityProvider>
   );

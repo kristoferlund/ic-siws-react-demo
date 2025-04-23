@@ -7,7 +7,7 @@ deploy-provider:
 	        domain = \"127.0.0.1\"; \
 	        uri = \"http://127.0.0.1:5173\"; \
 	        salt = \"salt\"; \
-				  chain_id = opt \"mainnet\"; \
+          chain_id = opt \"mainnet\"; \
 	        scheme = opt \"http\"; \
 	        statement = opt \"Login to the SIWS/IC demo app\"; \
 	        sign_in_expires_in = opt 300000000000; /* 5 minutes */ \
@@ -26,7 +26,7 @@ upgrade-provider:
 	        domain = \"127.0.0.1\"; \
 	        uri = \"http://127.0.0.1:5173\"; \
 	        salt = \"salt\"; \
-					chain_id = opt \"mainnet\"; \
+          chain_id = opt \"mainnet\"; \
 	        scheme = opt \"http\"; \
 	        statement = opt \"Login to the siws/IC demo app\"; \
 	        sign_in_expires_in = opt 300000000000; /* 5 minutes */ \
