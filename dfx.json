@@ -9,7 +9,7 @@
       "wasm": "https://github.com/kristoferlund/ic-siws/releases/download/v0.0.2/ic_siws_provider.wasm.gz"
     },
     "frontend": {
-      "build": ["npm run build"],
+      "build": ["pnpm run build"],
       "source": ["packages/frontend/dist"],
       "type": "assets"
     }
