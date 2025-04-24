@@ -1,6 +1,6 @@
-import reactLogo from "./assets/react.svg";
-import icLogo from "./assets/ic.svg";
-import solLogo from "./assets/solana.svg";
+import reactLogo from "../assets/react.svg";
+import icLogo from "../assets/ic.svg";
+import solLogo from "../assets/solana.svg";
 
 export default function Header() {
   return (
